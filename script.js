@@ -24,3 +24,8 @@ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entr
 sections.forEach(section=>observer.observe(section));
 const chapterHeading=document.querySelector('#chapters-title');
 if(chapterHeading)chapterHeading.innerHTML='一同探索叶芝<br>诗歌的声音';
+const oldPoemTranslation=document.querySelector('.poem-zh');
+if(oldPoemTranslation)oldPoemTranslation.innerHTML='<p>待你年岁渐长，发丝染霜，倦意袭来，<br>炉边昏昏欲睡时，请取下这册诗页，<br>慢慢读起，想起从前眼中的柔光，<br>还有那双眼睛深处，曾经沉静的幽暗。</p><p>曾有许多人爱你青春时的明艳，<br>爱你的容貌——或真心，或只是倾慕；<br>只有一个人，爱你心灵跋涉的模样，<br>也爱你容颜褪色后，眉间留下的愁绪。</p><p>你俯身在炉火旁，<br>轻轻诉说哀伤，想起爱情怎样逃走，<br>步入高山之上，<br>又把面容藏进一群星辰之间。</p>';
+const islandTranslation=document.querySelector('.full-zh');
+if(islandTranslation)islandTranslation.innerHTML='<p>我将起身，现在就动身，去茵尼斯弗利岛，<br>在那里，用黏土和枝条搭一间小屋；<br>种下九畦豆子，养一箱蜜蜂，<br>独自住在蜂鸣的林间空地里。</p><p>我将得到一些宁静，因为宁静正缓缓滴落，<br>从晨雾的面纱中落到蟋蟀歌唱的地方，<br>午夜闪着微亮，正午泛着紫色光辉，<br>黄昏满是红雀振翅。</p><p>我将起身，现在就动身，因为我一直<br>听见湖水轻拍岸边的低语；<br>无论站在路上，还是站在灰色的人行道上，<br>都在心底深处听见这声音。</p>';
+document.querySelectorAll('.translation-credit').forEach(credit=>credit.remove());
