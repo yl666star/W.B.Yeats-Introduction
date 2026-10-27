@@ -23,4 +23,4 @@ const bookmarks=[...document.querySelectorAll('.bookmark-rail a')];
 const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){links.forEach(link=>link.classList.toggle('active',link.hash===`#${entry.target.id}`));bookmarks.forEach(link=>link.classList.toggle('active',link.hash===`#${entry.target.id}`))}}),{rootMargin:'-35% 0px -55% 0px'});
 sections.forEach(section=>observer.observe(section));
 const chapterHeading=document.querySelector('#chapters-title');
-if(chapterHeading)chapterHeading.innerHTML='探寻叶芝<br>诗歌的声音';
+if(chapterHeading)chapterHeading.innerHTML='一同探索叶芝<br>诗歌的声音';
